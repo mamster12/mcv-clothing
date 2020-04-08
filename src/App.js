@@ -34,6 +34,7 @@ class App extends Component {
         })
       }
       setCurrentUser(userAuth);
+      // addCollectionAndDocumments('collections', collectionsArray.map(({ title, items }) => ({ title, items }))); * this was used to programmatically add collection to firebase db
     });
   }
 
@@ -57,7 +58,8 @@ class App extends Component {
 };
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+  // collectionsArray: selectCollectionsForPreview * this was used to programmatically add collection to firebase db
 });
 
 const mapDispatchToProps = dispatch => ({
