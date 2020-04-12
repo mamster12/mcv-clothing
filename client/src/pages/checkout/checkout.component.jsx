@@ -38,7 +38,7 @@ const CheckOutPage = ({ cartItems, total }) => {
             }
 
             <div className='total'>
-                TOTAL: ${total}
+                TOTAL: &#8369;{total}
             </div>
             <div className='test-warning'>
                 *Please use the following test credit ccard for payments*
