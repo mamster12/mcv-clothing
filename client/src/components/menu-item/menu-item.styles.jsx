@@ -36,11 +36,19 @@ export const Title = styled.h1`
     margin-bottom: 6px;
     font-size: 22px;
     color: #4a4a4a;
+
+    @media screen and (max-width: 800px) {
+        font-size: 15px;
+      }
 `
 
 export const Subtitle = styled.span`
     font-weight: lighter;
     font-size: 16px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 10px;
+      }
 `;
 
 export const MenuItemContainer = styled.div`
@@ -77,4 +85,8 @@ export const MenuItemContainer = styled.div`
         &:last-child {
         margin-left: 7.5px;
         }
+
+        @media screen and (max-width: 800px) {
+            height: 200px;
+          }
 `;

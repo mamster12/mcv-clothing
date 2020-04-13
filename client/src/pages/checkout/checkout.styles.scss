@@ -41,5 +41,25 @@
       font-size: 24px;
       color: red;
     }
+
+    @media screen and (max-width:800px){
+      width:100%;
+      padding:0;
+
+      .checkout-header {
+    
+        .header-block {
+          width: 23%;
+          padding:5px;
+    
+          &:last-child {
+            width: 18%;
+          }
+        }
+      }
+      .test-warning {
+        font-size: 15px;
+      }
+    }
   }
   

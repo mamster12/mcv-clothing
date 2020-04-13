@@ -11,4 +11,19 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width:800px){
+        width: 100%;
+
+        .buttons {
+            display:block;
+
+            .custom-button{
+                text-align: center;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+    }
 }

@@ -15,7 +15,7 @@
     }
 
     .custom-button {
-      widows: 80%;
+      width: 80%;
       opacity: 0.7;
       position: absolute;
       top: 255px;
@@ -48,6 +48,28 @@
       .price {
         width: 10%;
       }
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 40vw;
+
+      .custom-button {
+        display: block;
+        min-width: unset;
+        opacity: 0.9;
+        padding: 0;
+      }
+  
+      &:hover {
+        .image {
+          opacity: unset;
+        }
+  
+        .custom-button {
+          opacity: unset;
+        }
+      }
+    
     }
   }
   

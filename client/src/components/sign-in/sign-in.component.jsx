@@ -30,8 +30,8 @@ export const SignIn = ({ emailSignInStart, googleSignInStart }) => {
 
                 <FormInput type="password" name="password" value={password} onChange={handleChange} label='password' required />
                 <div className="buttons">
-                    <CustomButton type="submit" >Sign In</CustomButton>
-                    <CustomButton type='button' onClick={googleSignInStart} isGoogleSignIn>Sign In with Google</CustomButton>
+                    <CustomButton className="custom-button" type="submit" >Sign In</CustomButton>
+                    <CustomButton className="custom-button" type='button' onClick={googleSignInStart} isGoogleSignIn>Sign In with Google</CustomButton>
                 </div>
             </form>
         </div>
