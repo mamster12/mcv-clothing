@@ -5,6 +5,7 @@
     .title {
       font-size: 38px;
       margin: 0 auto 30px;
+      text-transform: uppercase;
     }
   
     .items {
@@ -20,6 +21,9 @@
 
     @media screen and (max-width: 800px) {
       align-items: center;
+      .title {
+        font-size: 30px;
+      }
       .items {
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
