@@ -26,9 +26,9 @@ export const SignIn = ({ emailSignInStart, googleSignInStart }) => {
             <h2>I already have an account</h2>
             <span>Sign in with your email and password</span>
             <form onSubmit={handleSubmit}>
-                <FormInput type="email" name="email" value={email} onChange={handleChange} label='email' required />
+                <FormInput type="email" name="email" value={email} onChange={handleChange} label='Email' required />
 
-                <FormInput type="password" name="password" value={password} onChange={handleChange} label='password' required />
+                <FormInput type="password" name="password" value={password} onChange={handleChange} label='Password' required />
                 <div className="buttons">
                     <CustomButton className="custom-button" type="submit" >Sign In</CustomButton>
                     <CustomButton className="custom-button" type='button' onClick={googleSignInStart} isGoogleSignIn>Sign In with Google</CustomButton>

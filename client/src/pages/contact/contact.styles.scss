@@ -1,0 +1,43 @@
+.send-mail {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    .title {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    textarea {
+        width: 500px;
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width:800px){
+        width: 100%;
+
+        .buttons {
+            display:block;
+
+            .custom-button{
+                text-align: center;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+    }
+}
