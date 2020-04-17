@@ -49,7 +49,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
         yield getSnapshotFromUserAuth(user);
     } catch (error) {
         yield put(signInFailure(error))
-
+        alert(error.code);
     }
 }
 
